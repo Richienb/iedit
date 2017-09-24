@@ -1,0 +1,48 @@
+  select{
+    background:rgb(212, 212, 212);
+    transition:1s;
+  }
+  select:hover{
+    background:rgb(138, 138, 138);
+    transition:1s;
+  }
+  #editor {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    height:96%;
+    z-index:2;
+  }
+  ::selection{
+    background-color:grey;
+    color:white;
+  }
+  iframe {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    border: 1px solid black;
+    z-index:2;
+  }
+  ::-webkit-scrollbar {
+    width: 9px;transition: all 0.3s;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(161, 161, 161,0.5); 
+    border:2px solid transparent;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+    background-color:rgba(59, 59, 59,0.7);
+  }
